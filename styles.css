@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.one {
+  background: linear-gradient(to top, #55403a, #feb47b, #ff6a00, #d42d0f);
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+  transition: background 0.1s ease; 
+}
+
+.two{
+  background-color: #331212;
+  height: 100vh;
+  width: 100vw;
+  z-index: 5;
+}
+
+.desert {
+  bottom: -74px;
+  position: absolute;
+  width: 100vw;
+  height: 900px;
+  z-index: 1;
+  left: -9px;
+}
+
+.sun {
+  width: 832px;
+  position: absolute;
+  top: -82px;
+  left: 95px;
+  z-index: 0;
+}
+
+.grass{
+  width: 100vw;
+  position: absolute;
+  height: 850px;
+  bottom: -58px;
+  right: -5px;
+  z-index: 3;
+}
+
+.horse{
+  width: 722px;
+  position: absolute;
+  height: 892px;
+  z-index: 2;
+  right: 213px;
+  top: -110px;
+}
+
+.heading{
+  font-weight: 900;
+  color: white;
+  font-family: fantasy;
+  font-size: 91px;
+  text-align: center;
+  position: relative;
+  top: 34px;
+}
+
+/* Container to hold stars */
+.stars-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  pointer-events: none; /* Allow clicking through the stars */
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Star Style */
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0;
+  animation: twinkle 1.5s infinite alternate;
+}
+
+/* Twinkling Animation */
+@keyframes twinkle {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
