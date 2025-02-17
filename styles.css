@@ -232,12 +232,24 @@ body {
   width: 100vw;
   margin-top: 3px;
 }
-
+.bartender{
+  margin-left: 15vw;
+}
+.wanted{
+  margin-left: 30vw;
+}
 .section{
   height: auto;
 }
-
+.wife{
+  margin-left: 20vw;
+}
 .four h1{
+  font-size: 160px;
+  padding: 10px;
+}
+
+.eight h1{
   font-size: 160px;
   padding: 10px;
 }
@@ -254,4 +266,16 @@ body {
 
 .h{
   font-size: 120px;
+}
+
+.full{
+  width: 100vw;
+}
+
+.fifth h1{
+  font-size: 160px;
+}
+
+.six h1{
+  font-size: 160px;
 }
