@@ -13,18 +13,6 @@ document.addEventListener('click', function() {
   });
 });
 
-const pop1Image = document.getElementById('pop1'); 
-
-window.addEventListener('scroll', function () {
-  const rect = pop1Image.getBoundingClientRect();
-  const windowHeight = window.innerHeight;
-
-  if (rect.top <= windowHeight * 0.8 && rect.bottom >= 0) {
-    pop1Image.classList.add('visible');
-  } else {
-    pop1Image.classList.remove('visible');
-  }
-});
 
 
 window.addEventListener("scroll", () => {
@@ -32,7 +20,7 @@ window.addEventListener("scroll", () => {
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
   const starStopPoint = maxScroll * 0.6;
 
-  const sunStopPoint = maxScroll * 0.49; 
+  const sunStopPoint = maxScroll * 0.29; 
   const desertStopPoint = maxScroll * 0.3; 
   const grassStopPoint = maxScroll * 0.4; 
   const horseStopPoint = maxScroll * 1.9; 

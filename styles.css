@@ -21,6 +21,7 @@ body {
   height: 100vh;
   width: 100vw;
   z-index: 5;
+  overflow: hidden;
 }
 
 .desert {
@@ -100,25 +101,122 @@ body {
   }
 }
 
-
-.image-wrap{
-  height: 350px;
-  bottom: -356px;
+.img-bg{
+  width: 100vw;
+  z-index: 20;
+  position: relative;
 }
 
-#pop1 {
-  border-radius: 15px;
+
+.chars{
+  position: relative;
+  z-index: 400;
+  width: 70vw;
+  top: -1190px;
+}
+/* 
+.bg{
+  width: 80vw;
+  height: 76vh;
   position: absolute;
-  z-index: 10;
-  height: 350px;
-  bottom: -356px;
-  left: -500px; 
-  transition: transform 1s ease, opacity 1s ease;
-  opacity: 0; 
+} */
+
+.three{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.floating-image {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.night2{
+  width: 500px;
+  margin: 50px;
+  border-radius: 10px;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
 }
 
 
-#pop1.visible {
-  opacity: 1;
-  transform: translateX(550px);
+body {
+  font-family: 'Georgia', serif;
+  color: white;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.story-text {
+  font-size: 1.5em;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+  animation: glowEffect 2s ease-in-out infinite alternate;
+  background-color: transparent; /* Removed the background */
+}
+
+.line-break-text {
+  font-size: 1.5em;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+  animation: glowEffect 2s ease-in-out infinite alternate;
+  white-space: pre-line; 
+}
+
+@keyframes glowEffect {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 0.9);
+  }
+}
+
+.cloud{
+  position: relative;
+  width: 1292px;
+  right: -387px;
+  top: -793px;
+}
+
+.sub{
+  overflow: hidden;
+  height: 100vh;
+}
+
+.dialogue{
+  position: relative;
+    top: -1157px;
+    color: black;
+    border: 2px solid white;
+    left: -389px;
+    font-size: 33px;
+}
+
+.radius{
+  border-radius: 10px;
+}
+
+.night{
+  position: relative;
+  left: 10%;
 }
