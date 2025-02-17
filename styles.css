@@ -12,6 +12,12 @@ body {
   margin: 0;
   padding: 0;
 }
+.home{
+  margin-left: 20vw;
+}
+.nine h1{
+  font-size: 160px;
+}
 
 .one {
   background: linear-gradient(to top, #55403a, #feb47b, #ff6a00, #d42d0f);
