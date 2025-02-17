@@ -5,6 +5,7 @@ let sun = document.querySelector(".sun");
 let heading = document.querySelector(".heading");
 let sky = document.querySelector(".one");
 let starsContainer = document.querySelector(".stars-container");
+let clayone = document.querySelector(".clay1")
 
 document.addEventListener('click', function() {
   const audio = document.getElementById('backgroundAudio');
@@ -24,13 +25,13 @@ window.addEventListener("scroll", () => {
   const desertStopPoint = maxScroll * 0.3; 
   const grassStopPoint = maxScroll * 0.4; 
   const horseStopPoint = maxScroll * 1.9; 
-
   
   heading.style.marginTop = Math.min(value * 1.5, maxScroll) + "px";
   sun.style.marginTop = Math.min(value * 3.5, sunStopPoint) + "px";
   desert.style.marginTop = Math.max(value * -1.5, -desertStopPoint) + "px";
   grass.style.marginTop = Math.max(value * -1.5, -grassStopPoint) + "px";
   horse.style.marginRight = Math.min(value * 4.5, horseStopPoint) + "px";
+
 
   const scrollPercentage = (value / maxScroll) * 4;
   const clampedPercentage = Math.min(Math.max(scrollPercentage, 0), 1);
@@ -100,3 +101,5 @@ function createStars(scrollPercentage) {
     starsContainer.appendChild(star);
   }
 }
+
+

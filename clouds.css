@@ -1,0 +1,26 @@
+.cloud {
+    position: relative;
+    width: 450px;
+    right: -790px;
+    top: -643px;
+    z-index: 10;
+}
+
+.cloud2 {
+    position: relative;
+    width: 450px;
+    right: -790px;
+    top: -873px;
+}
+
+.cloud3{
+    position: relative;
+    width: 450px;
+    right: 560px;
+    top: -143px;
+    z-index: 10;
+}
+
+.highlight{
+    background-color: red;
+}

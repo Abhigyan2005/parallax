@@ -6,6 +6,11 @@
 
 body {
   overflow-x: hidden;
+  font-family: "Georgia", serif;
+  color: white;
+  background-color: black;
+  margin: 0;
+  padding: 0;
 }
 
 .one {
@@ -18,8 +23,8 @@ body {
 
 .two {
   background-color: #331212;
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
   z-index: 5;
   overflow: hidden;
 }
@@ -69,14 +74,13 @@ body {
   top: 34px;
 }
 
-
 .stars-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 50vh;
-  pointer-events: none; 
+  pointer-events: none;
   z-index: 0;
   overflow: hidden;
 }
@@ -101,14 +105,13 @@ body {
   }
 }
 
-.img-bg{
+.img-bg {
   width: 100vw;
   z-index: 20;
   position: relative;
 }
 
-
-.chars{
+.chars {
   position: relative;
   z-index: 400;
   width: 70vw;
@@ -121,8 +124,7 @@ body {
   position: absolute;
 } */
 
-.three{
-  height: 100vh;
+.three {
   width: 100vw;
   background-color: black;
 }
@@ -132,30 +134,28 @@ body {
 }
 
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
-.night2{
+.night2 {
   width: 500px;
   margin: 50px;
   border-radius: 10px;
 }
 
-.flex{
+.flex {
   display: flex;
   flex-direction: row;
 }
 
-
-body {
-  font-family: 'Georgia', serif;
-  color: white;
-  background-color: black;
-  margin: 0;
-  padding: 0;
-}
 .story-text {
   font-size: 1.5em;
   line-height: 1.6;
@@ -163,10 +163,11 @@ body {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+    0 0 20px rgba(255, 255, 255, 0.5);
   animation: glowEffect 2s ease-in-out infinite alternate;
   background-color: transparent;
-  z-index: 20;  
+  z-index: 20;
 }
 
 .line-break-text {
@@ -176,51 +177,40 @@ body {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5); 
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+    0 0 20px rgba(255, 255, 255, 0.5);
   animation: glowEffect 2s ease-in-out infinite alternate;
-  white-space: pre-line; 
+  white-space: pre-line;
 }
 
 @keyframes glowEffect {
   0% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+      0 0 20px rgba(255, 255, 255, 0.5);
   }
   100% {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 0.9);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1),
+      0 0 40px rgba(255, 255, 255, 0.9);
   }
 }
 
-.cloud{
-  position: relative;
-  width: 1292px;
-  right: -387px;
-  top: -793px;
-}
 
-.sub{
-  overflow: hidden;
+.sub {
   height: 100vh;
   position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-.dialogue{
-  position: relative;
-    top: -1157px;
-    color: black;
-    border: 2px solid white;
-    left: -389px;
-    font-size: 33px;
-}
-
-.radius{
+.radius {
   border-radius: 10px;
 }
 
-.bg-bl{
+.bg-bl {
   background-color: black;
 }
-.night{
+.night {
   position: relative;
   left: 10%;
 }
@@ -234,6 +224,34 @@ body {
 }
 
 .upper {
-  position: relative;  
-  z-index: 10 !important;  
+  position: relative;
+  z-index: 10 !important;
+}
+
+.night3{
+  width: 100vw;
+  margin-top: 3px;
+}
+
+.section{
+  height: auto;
+}
+
+.four h1{
+  font-size: 160px;
+  padding: 10px;
+}
+
+.suby{
+  font-size: 50px;
+}
+
+.flex1{
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+}
+
+.h{
+  font-size: 120px;
 }
