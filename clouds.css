@@ -1,0 +1,90 @@
+.cloud {
+    position: relative;
+    width: 450px;
+    right: -790px;
+    top: -643px;
+    z-index: 10;
+}
+
+.cloud2 {
+    position: relative;
+    width: 450px;
+    right: -790px;
+    top: -873px;
+}
+
+.cloud3{
+    position: relative;
+    width: 450px;
+    right: 560px;
+    top: -143px;
+    z-index: 10;
+}
+
+.cloud20{
+    position: relative;
+    width: 450px;
+    right: -50px;
+    top: 0;
+    z-index: 10;
+}
+
+.cloud9{
+    position: relative;
+    width: 450px;
+    right: -200px;
+    top: -503px;
+    z-index: 10;
+}
+
+.cloud16{
+    position: relative;
+    width: 450px;
+    right: -450px;
+    top: -500px;
+    z-index: 10;
+}
+
+.cloud13{
+    position: relative;
+    width: 450px;
+    right: -50px;
+    top: 0;
+    z-index: 10;
+}
+
+.cloud10{
+    position: relative;
+    width: 450px;
+    right: -600px;
+    top: -803px;
+    z-index: 10;
+}
+
+.cloud5{
+    position: relative;
+    width: 450px;
+    right: 100px;
+    top: -23px;
+    z-index: 10;
+}
+
+.cloud4{
+    position: relative;
+    width: 450px;
+    right: -560px;
+    top: -543px;
+    z-index: 10;
+}
+
+.cloud6{
+      position: relative;
+    width: 450px;
+    right: -560px;
+    top: -543px;
+    z-index: 10;
+}
+
+.highlight{
+    background-color: red;
+}

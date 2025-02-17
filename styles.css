@@ -6,6 +6,11 @@
 
 body {
   overflow-x: hidden;
+  font-family: "Georgia", serif;
+  color: white;
+  background-color: black;
+  margin: 0;
+  padding: 0;
 }
 
 .one {
@@ -18,9 +23,10 @@ body {
 
 .two {
   background-color: #331212;
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
   z-index: 5;
+  overflow: hidden;
 }
 
 .desert {
@@ -68,14 +74,13 @@ body {
   top: 34px;
 }
 
-
 .stars-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 50vh;
-  pointer-events: none; 
+  pointer-events: none;
   z-index: 0;
   overflow: hidden;
 }
@@ -100,19 +105,177 @@ body {
   }
 }
 
-#pop1 {
-  border-radius: 15px;
+.img-bg {
+  width: 100vw;
+  z-index: 20;
+  position: relative;
+}
+
+.chars {
+  position: relative;
+  z-index: 400;
+  width: 70vw;
+  top: -1190px;
+}
+/* 
+.bg{
+  width: 80vw;
+  height: 76vh;
   position: absolute;
-  z-index: 10;
-  height: 350px;
-  bottom: -356px;
-  left: -500px; 
-  transition: transform 1s ease, opacity 1s ease;
-  opacity: 0; 
+} */
+
+.three {
+  width: 100vw;
+  background-color: black;
+}
+
+.floating-image {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.night2 {
+  width: 500px;
+  margin: 50px;
+  border-radius: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.story-text {
+  font-size: 1.5em;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+    0 0 20px rgba(255, 255, 255, 0.5);
+  animation: glowEffect 2s ease-in-out infinite alternate;
+  background-color: transparent;
+  z-index: 20;
+}
+
+.line-break-text {
+  font-size: 1.5em;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+    0 0 20px rgba(255, 255, 255, 0.5);
+  animation: glowEffect 2s ease-in-out infinite alternate;
+  white-space: pre-line;
+}
+
+@keyframes glowEffect {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+      0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1),
+      0 0 40px rgba(255, 255, 255, 0.9);
+  }
 }
 
 
-#pop1.visible {
-  opacity: 1;
-  transform: translateX(550px);
+.sub {
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.radius {
+  border-radius: 10px;
+}
+
+.bg-bl {
+  background-color: black;
+}
+.night {
+  position: relative;
+  left: 10%;
+}
+
+.clay1 {
+  position: absolute;
+  width: 600px;
+  z-index: 5;
+  top: -58px;
+  left: 806px;
+}
+
+.upper {
+  position: relative;
+  z-index: 10 !important;
+}
+
+.night3{
+  width: 100vw;
+  margin-top: 3px;
+}
+.bartender{
+  margin-left: 15vw;
+}
+.wanted{
+  margin-left: 30vw;
+}
+.section{
+  height: auto;
+}
+.wife{
+  margin-left: 20vw;
+}
+.four h1{
+  font-size: 160px;
+  padding: 10px;
+}
+
+.eight h1{
+  font-size: 160px;
+  padding: 10px;
+}
+
+.suby{
+  font-size: 50px;
+}
+
+.flex1{
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+}
+
+.h{
+  font-size: 120px;
+}
+
+.full{
+  width: 100vw;
+}
+
+.fifth h1{
+  font-size: 160px;
+}
+
+.six h1{
+  font-size: 160px;
 }

@@ -5,6 +5,7 @@ let sun = document.querySelector(".sun");
 let heading = document.querySelector(".heading");
 let sky = document.querySelector(".one");
 let starsContainer = document.querySelector(".stars-container");
+let clayone = document.querySelector(".clay1")
 
 document.addEventListener('click', function() {
   const audio = document.getElementById('backgroundAudio');
@@ -13,36 +14,24 @@ document.addEventListener('click', function() {
   });
 });
 
-const pop1Image = document.getElementById('pop1'); 
-
-window.addEventListener('scroll', function () {
-  const rect = pop1Image.getBoundingClientRect();
-  const windowHeight = window.innerHeight;
-
-  if (rect.top <= windowHeight * 0.8 && rect.bottom >= 0) {
-    pop1Image.classList.add('visible');
-  } else {
-    pop1Image.classList.remove('visible');
-  }
-});
 
 
 window.addEventListener("scroll", () => {
   let value = window.scrollY;
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-  const starStopPoint = maxScroll * 0.6;
+  const starStopPoint = maxScroll * 6;
 
-  const sunStopPoint = maxScroll * 0.49; 
+  const sunStopPoint = maxScroll * 0.29; 
   const desertStopPoint = maxScroll * 0.3; 
   const grassStopPoint = maxScroll * 0.4; 
   const horseStopPoint = maxScroll * 1.9; 
-
   
   heading.style.marginTop = Math.min(value * 1.5, maxScroll) + "px";
   sun.style.marginTop = Math.min(value * 3.5, sunStopPoint) + "px";
   desert.style.marginTop = Math.max(value * -1.5, -desertStopPoint) + "px";
   grass.style.marginTop = Math.max(value * -1.5, -grassStopPoint) + "px";
   horse.style.marginRight = Math.min(value * 4.5, horseStopPoint) + "px";
+
 
   const scrollPercentage = (value / maxScroll) * 4;
   const clampedPercentage = Math.min(Math.max(scrollPercentage, 0), 1);
@@ -112,3 +101,5 @@ function createStars(scrollPercentage) {
     starsContainer.appendChild(star);
   }
 }
+
+
