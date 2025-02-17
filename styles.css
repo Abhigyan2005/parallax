@@ -156,7 +156,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .story-text {
   font-size: 1.5em;
   line-height: 1.6;
@@ -166,7 +165,8 @@ body {
   padding: 20px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
   animation: glowEffect 2s ease-in-out infinite alternate;
-  background-color: transparent; /* Removed the background */
+  background-color: transparent;
+  z-index: 20;  
 }
 
 .line-break-text {
@@ -201,6 +201,7 @@ body {
 .sub{
   overflow: hidden;
   height: 100vh;
+  position: relative;
 }
 
 .dialogue{
@@ -216,7 +217,23 @@ body {
   border-radius: 10px;
 }
 
+.bg-bl{
+  background-color: black;
+}
 .night{
   position: relative;
   left: 10%;
+}
+
+.clay1 {
+  position: absolute;
+  width: 600px;
+  z-index: 5;
+  top: -58px;
+  left: 806px;
+}
+
+.upper {
+  position: relative;  
+  z-index: 10 !important;  
 }

@@ -18,7 +18,7 @@ document.addEventListener('click', function() {
 window.addEventListener("scroll", () => {
   let value = window.scrollY;
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-  const starStopPoint = maxScroll * 0.6;
+  const starStopPoint = maxScroll * 6;
 
   const sunStopPoint = maxScroll * 0.29; 
   const desertStopPoint = maxScroll * 0.3; 
